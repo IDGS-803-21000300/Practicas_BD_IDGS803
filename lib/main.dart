@@ -1,6 +1,4 @@
 
-import 'dart:io';
-
 import 'package:don_galleto/FrontEnd/Login/LoginPageMain.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,7 +12,7 @@ void main() async{
   //   // Change the default factory
   //   databaseFactory = databaseFactoryFfi;
   // }
-  // runApp(const MyApp());
+  runApp(const MyApp());
   // await GetStorage.init();
 
 }
@@ -30,7 +28,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     ThemeData.dark();
   }
@@ -47,19 +44,19 @@ class _MyAppState extends State<MyApp> {
         GetPage(name: "/", page: () => LoginPageMain()),
       ],
       theme: ThemeData(
-        primaryColor: const Color.fromARGB(255, 45, 113, 202),
+        primaryColor: const Color.fromARGB(255, 115, 128, 99),
         colorScheme: const ColorScheme(
           brightness: Brightness.light, 
-          onBackground: Color.fromARGB(255, 58, 177, 102), 
-          secondary: Color.fromARGB(255, 54, 54, 54),
-          primary: Color.fromARGB(255, 21, 151, 88),
-          onPrimary: Color.fromARGB(255, 43, 43, 42),
-          surface: Color.fromARGB(255, 37, 153, 45),
-          onSurface: Color.fromARGB(255, 35, 35, 35),
+          onBackground: Color.fromARGB(255, 115, 128, 99), 
+          secondary: Color.fromARGB(255, 150, 52, 52),
+          primary: Color.fromARGB(255, 115, 128, 99),
+          onPrimary: Color.fromARGB(255, 133, 104, 90),
+          surface: Color.fromARGB(255, 203, 142, 95),
+          onSurface: Color.fromARGB(255, 224, 222, 171),
           error: Color.fromARGB(255, 117, 21, 21),
           onError: Color.fromARGB(255, 148, 19, 19),
           onSecondary: Color.fromARGB(255, 60, 21, 21),
-          background: Color.fromARGB(255, 42, 155, 91)
+          background: Color.fromARGB(255, 115, 128, 99)
           )
       ),
       navigatorKey: Get.key,
